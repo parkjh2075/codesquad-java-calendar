@@ -6,7 +6,14 @@ public class Calendar {
 	
 	private static final int[] MAX_DAYS = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
 	public int getMaxDaysOfMonth(int month) { // "maxDaysOfMonth"를 함수로 빼준 것
-		return MAX_DAYS[month - 1];
+		switch (month) {
+		case 2:
+			return 28;
+		case 4:
+			return 30;
+		default:
+			return 31;
+		}
 	}
 	
 	public void printSampleCalendar() {
