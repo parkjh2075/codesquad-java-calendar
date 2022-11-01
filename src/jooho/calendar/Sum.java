@@ -20,5 +20,6 @@ public class Sum {
 	// int c = a + b;
 	// System.out.println("두 수의 합은 " + (a + b) + "입니다.");
 	System.out.printf("두 수의 합은 %d입니다.", a + b); // 20,21번째 줄을 간단히 한 것
+	scanner.close();
 	}
 }
